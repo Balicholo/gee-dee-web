@@ -727,9 +727,13 @@ html{
  }
  .testimonial-container{
     margin-top: 50px;
+    @media (max-width: 390px) {
+        margin-top: 100px;
+    }
  }
  /* FORM */
  .form{
+    padding-bottom: 20px;
     h1{
         font-weight: 200;
         text-align: center;
@@ -776,13 +780,38 @@ html{
     object-fit: cover;
  }
  /* TICKING */
-.tick-circles{
-    /* background-color: aqua; */
+ .tick-circles {
     width: 80%;
     padding: 20px;
-    border: 1px solid rgb(56, 56, 56);
+    border: 1px solid rgba(179, 179, 179, 0.527);
     border-radius: 10px;
+  }
+.ri-circle-fill{
+    color: rgba(189, 189, 189, 0.767);
 }
+  .tick-circles p {
+    border-bottom: 1px solid rgba(224, 224, 224, 0.747);
+    padding-bottom: 10px;
+    cursor: pointer; /* Make cursor pointer to indicate clickability */
+    display: flex;
+    align-items: center;
+  }
+  
+  .tick-circles i {
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  .other-tick {
+    color: rgb(0, 162, 255);
+  }
+  
+  .tick-circles p.selected i {
+    /* Change the icon when selected */
+    content: "\2713"; /* Unicode for check mark */
+    color: rgb(0, 162, 255); /* Change color for the selected state */
+    font-style: normal; /* Override any icon font styling */
+  }
+  
  /* SERVICES */
 .service-info{
     padding: 20px;

@@ -49,6 +49,17 @@ setInterval(() => {
   }
 }, 2000); // Change image every 2 seconds
 
+// TICK LIST
+  // Select all paragraphs in the tick-circles container
+  const tickItems = document.querySelectorAll('.tick-circles p');
+
+  // Add click event listener to each item
+  tickItems.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('selected'); // Toggle selected class
+    });
+  });
+
 // SCROLL REVEAL ANIMATION
 const sr = ScrollReveal({
     origin: 'top',
