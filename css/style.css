@@ -775,7 +775,14 @@ html{
     height: 100%;
     object-fit: cover;
  }
-
+ /* TICKING */
+.tick-circles{
+    /* background-color: aqua; */
+    width: 80%;
+    padding: 20px;
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 10px;
+}
  /* SERVICES */
 .service-info{
     padding: 20px;
